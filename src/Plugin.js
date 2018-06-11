@@ -57,7 +57,7 @@ export default class Plugin {
       );
       this.selectedMethods[methodName] = addDefault(file.path, path, { nameHint: methodName });
       if (style === true) {
-        addSideEffect(file.path, `${path}/style`);
+        addSideEffect(file.path, `${path}/style/index.css`);
       } else if (style === 'css') {
         addSideEffect(file.path, `${path}/style/css`);
       } else if (typeof style === 'function') {
